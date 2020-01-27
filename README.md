@@ -1,52 +1,40 @@
-# Private Events
+# Associations With Rails - Eventbrite Clone
 
-This is part of the Association Project in The Odin Project’s Ruby on Rails Curriculum. Find it at [here](https://www.theodinproject.com/courses/ruby-on-rails/lessons/associations).
+A site similar to a private Eventbrite which allows users to create events and then manage user signups. Users can create events and send invitations and parties. Events take place at a specific date and at a location. This project is designed to mimic the logic behind [Eventbrite](https://www.https:/www.eventbrite.com/).
 
-## Function description
 
-1. User
-   - Sign up / Log in / Log out
-      * User can sign up with name, email
-      * User can log in with email
-   - Without log out, reopen browser, log in status remain
+## Technologies
 
-2. Event
-   - Create : Log in user can create a new event
-   - Delete : Event creator can delete the event
-   - Attend : Users can attend/leave event
-   - main view : In the root path
-      * User can see any Upcoming event, Past event
-   - Each event view : When user clicked an event
-      * User can see event attendees
+- HTML
+- CSS
+- SASS
+- Ruby
+- Ruby on Rails
 
-3. Event option access for log in user
-   - Create event
-   - User created upcoming / past event list
-   - User attended upcoming / past event list
+## Usage
 
-## Technology
+> Clone the repository to your local machine
 
-- Ruby 2.6.3
-- Rails 5.2.3
+```
+$ git clone git@github.com:ampaire/private_events.git
+```
 
-## Getting started
+> cd into the directory
 
-To get started with the app, clone the repo and then install the needed gems:
+```
+$ cd private_events
+```
+
+> Then install the needed gems (while skipping any gems needed only in production):
 
 ```
 $ bundle install --without production
 ```
 
-Next, migrate the database:
+> Next, migrate the database:
 
 ```
 $ rails db:migrate
-```
-
-Then, load data from seed into the database:
-
-```
-$ rails db:seed
 ```
 
 Finally, run the test suite to verify that everything is working correctly:
@@ -55,26 +43,36 @@ Finally, run the test suite to verify that everything is working correctly:
 $ rails test
 ```
 
-If the test suite passes, you'll be ready to run the app in a local server:
+> If the test suite passes, you'll be ready to run the app in a local server:
 
 ```
 $ rails server
 ```
 
-## Contributors
+[![Run on Repl.it](https://repl.it/badge/github/rOluochKe/test)](https://repl.it/github/rOluochKe/test)
 
-This is a collaborative project by us: [Simon Wathigo](https://github.com/wathigo) and [Suhyeon Jang](https://github.com/shjang7)
+## Functionalities
 
+- Create an account
+- Login with an email
+- Create an events
+- Attend other people's events
+- People attending your events
+- Check your upcoming and past events
+
+## Designed and developed by
+
+[Phemia Ampaire](https://github.com/ampaire) &&
+[Raymond Oluoch](https://github.com/rOluochKe)
 
 ## Contributing
 
-1. Fork it (https://github.com/wathigo/private-events/fork)
+1. Fork it (git clone git@github.com:ampaire/private_events/fork)
 2. Create your feature branch (git checkout -b feature/[choose-a-name])
-3. Commit your changes (git commit -am 'what this commit will fix/add')
-4. Push to the branch (git push origin feature/[chosen-name])
+3. Commit your changes (git commit -am 'What this commit will fix/add')
+4. Push to the branch (git push origin feature/[chosen name])
 5. Create a new Pull Request
-
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details

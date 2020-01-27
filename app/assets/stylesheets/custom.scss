@@ -124,13 +124,12 @@ input {
 /* sidebar */
 
 .event{
-  background-image: linear-gradient(to bottom right, #C805CF, #FF7C09);
-  border-radius: 10px;
+  background: #ccc;
   margin: 10px;
-  flex: 45%;
+  flex: 100%;
   padding: 20px;
   span{
-    color: white;
+    color: #000;
     display: block;
   }
 }
@@ -141,9 +140,7 @@ input {
   justify-content: space-around;
   margin-left: -10px;
   margin-right: -10px;
-  background:
-    url('event.webp');
-  background-size: cover;
+  list-style-type: none;
 }
 
 .d-hidden {
@@ -156,19 +153,20 @@ input {
 
 .action-btn{
   display: inline-block;
-  border-radius: 15px;
   height: 30px;
   width: 80px;
-  background-image: linear-gradient(to right, #FFD881, #fff);
-  color: #000;
+  background: black;
+  color: #fff;
   text-align: center;
   padding: 5px;
-  bottom: 0;
   position: absolute;
   bottom: 10px;
-  left: 200px;
 }
 
 .event-header{
   font-size: 30px;
+}
+
+span.timestamp {
+    margin-bottom: 30px;
 }

@@ -3,19 +3,19 @@
   <li class="event card" id="event-<%= @event.id %>">
     <div class="card-body">
       <span class="creator a-white">
-        Created by: <%= @event.creator.name %>
+        <strong>CREATED BY:</strong> <%= @event.creator.name %>
       </span>
       <span class="title">
-        Subject: <%= @event.title.upcase %>
+        <strong>SUBJECT:</strong> <%= @event.title %>
       </span>
       <span class="description">
-        Description: <%= @event.description %>
+        <strong>DESCRIPTION:</strong> <%= @event.description %>
       </span>
       <span class="location">
-        Venue: <%= @event.location %>
+        <strong>VENUE:</strong> <%= @event.location %>
       </span>
       <span class="date">
-        Date: <%= @event.date %>
+        <strong>DATE:</strong> <%= @event.date %>
       </span>
       <span class="timestamp">
         <small>Created <%= time_ago_in_words(@event.created_at) %> ago.</small>

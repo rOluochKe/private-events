@@ -1,4 +1,8 @@
-<% @creator ||= current_user %>
-<% provide(:button_text, "Create Event") %>
-<h1>New Event</h1>
-<%= render 'form', creator: @creator %>
+<div class= "row">
+  <div class="col-md-6 col-md-offset-3">
+    <% @creator ||= current_user %>
+    <% provide(:button_text, "Create Event") %>
+    <h1>New Event</h1>
+    <%= render 'form', creator: @creator %>
+  </div>
+</div>

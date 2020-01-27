@@ -3,25 +3,25 @@
   <div class="user-show">
     <div class="hosting-events-upcoming">
       <div>
-        Hosting Events - Upcoming (<%= @hosting_events.upcoming_events.count %>)
+        <h1>HOSTING EVENTS - UPCOMING (<%= @hosting_events.upcoming_events.count %>) </h1>
       </div>
       <%= render 'shared/events_list', events: @hosting_events.upcoming_events %>
     </div>
     <div class="hosting-events-past">
       <div>
-        Hosting Events - Past (<%= @hosting_events.past_events.count %>)
+        <h1>HOSTED EVENTS - PAST (<%= @hosting_events.past_events.count %>)</h1>
       </div>
       <%= render 'shared/events_list', events: @hosting_events.past_events %>
     </div>
     <div class="attended-events-upcoming">
       <div>
-        Attended Events - Upcoming (<%= @attended_events.upcoming_events.count %>)
+        <h1>ATTENDING EVENTS - UPCOMING (<%= @attended_events.upcoming_events.count %>)</h1>
       </div>
       <%= render 'shared/events_list', events: @attended_events.upcoming_events %>
     </div>
     <div class="attended-events-past">
       <div>
-        Attended Events - Past (<%= @attended_events.past_events.count %>)
+        <h1>ATTENDED EVENTS - PAST (<%= @attended_events.past_events.count %>)</h1>
       </div>
       <%= render 'shared/events_list', events: @attended_events.past_events %>
     </div>
