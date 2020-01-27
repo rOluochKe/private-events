@@ -1,0 +1,4 @@
+<% @creator ||= current_user %>
+<% provide(:button_text, "Create Event") %>
+<h1>New Event</h1>
+<%= render 'form', creator: @creator %>

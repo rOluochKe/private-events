@@ -1,0 +1,9 @@
+<% @events = events %>
+<% if @events.any? %>
+  <ol class="events">
+    <% @events.each do |event| %>
+      <%= render event %>
+    <% end %>
+  </ol>
+  <%= will_paginate @events %>
+<% end %>

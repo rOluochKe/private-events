@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+michael:
+  title: Faker::Book.title
+  description: Faker::TvShows::TheITCrowd.quote
+  date: time_rand
+  location: Faker::Address.full_address
+  creator: michael
+
+archer:
+  title: Faker::Book.title
+  description: Faker::TvShows::TheITCrowd.quote
+  date: time_rand
+  location: Faker::Address.full_address
+  creator: archer
